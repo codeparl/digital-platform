@@ -1,0 +1,105 @@
+# Project: Laravel-Based Learner Portfolio Platform Inspired by Mahara
+
+## Objective
+
+Analyse the archived Mahara open-source project and use it as a functional reference to design and implement a completely new, Laravel-native learner portfolio platform.
+
+The objective is NOT to convert Mahara's existing PHP code line by line. Instead, understand its functionality, domain concepts, workflows, data relationships and permission mechanisms, then implement equivalent or improved capabilities using Laravel conventions.
+
+## Reference Repository
+
+https://github.com/MaharaProject/mahara
+
+## Core Instructions
+
+### 1. Analyse before implementation
+
+Inspect the repository and document:
+
+- Core application architecture.
+- User and institution management.
+- Artefact and file management.
+- Portfolio pages and collections.
+- Journals and reflections.
+- Groups and collaboration.
+- Sharing, access control and permissions.
+- Feedback and assessment.
+- Existing integrations and extension mechanisms.
+
+Produce a functional analysis and identify features that should be retained, redesigned or excluded.
+
+### 2. Design a Laravel-native architecture
+
+Use Laravel conventions, including:
+
+- Eloquent models and relationships.
+- Migrations and seeders.
+- Form Requests and validation.
+- Policies and Gates.
+- Services and actions where appropriate.
+- Events and listeners where useful.
+- API endpoints for external integrations.
+- Automated tests.
+
+Do not reproduce Mahara's legacy architecture unnecessarily.
+
+### 3. Core functional requirements
+
+Implement:
+
+- Learner profiles and permanent learner identity.
+- Artefact and evidence management.
+- Portfolio pages.
+- Portfolio collections.
+- Journals and reflections.
+- Project registration and management.
+- Individual and group portfolios.
+- Sharing and access permissions.
+- Teacher and mentor feedback.
+- Assessment rubrics.
+- Competency and skill tracking.
+- Learner development timelines.
+- Progress reports and achievements.
+
+### 4. Educational requirements
+
+The platform must support learners progressing through P6–S6 and beyond without losing their historical records.
+
+A learner must retain their portfolio when moving between academic years, classes, schools or programmes, subject to institutional access and data-retention policies.
+
+Projects must not be restricted to ICT. Support science, mathematics, agriculture, engineering, robotics, creative arts and other disciplines.
+
+### 5. Integrations
+
+Design integration capabilities for:
+
+- Moodle 5.3: learner identity, courses, assignments and assessment references.
+- Nextcloud: file storage and retrieval through supported APIs or WebDAV.
+
+Keep these integrations optional and decoupled from the core portfolio functionality.
+
+### 6. Development rules
+
+- Build a genuinely new Laravel application.
+- Do not copy Mahara's legacy code into Laravel.
+- Do not assume its database schema is suitable.
+- Preserve the original Mahara copyright and licensing notices in the research documentation.
+- Respect GPL v3 obligations when incorporating or adapting protected code.
+- Keep the implementation modular and maintainable.
+- Write tests for important business rules and permissions.
+- Do not implement all features in one step.
+
+## Expected First Deliverable
+
+Before writing application code, produce:
+
+1. Mahara functional architecture analysis.
+2. Feature mapping from Mahara to the proposed Laravel application.
+3. Proposed Laravel architecture.
+4. Database entity relationship design.
+5. Role and permission model.
+6. Integration architecture for Moodle and Nextcloud.
+7. Phased implementation roadmap.
+8. Technical risks, especially data migration, security and licensing.
+
+Wait for architectural review and approval before beginning implementation.
